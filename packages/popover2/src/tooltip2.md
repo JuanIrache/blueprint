@@ -25,8 +25,8 @@ A single target can be wrapped in both a popover and a tooltip.
 
 You must put the `Tooltip2` _inside_ the `Popover2` (and the target inside the
 `Tooltip2`), so the final hierarchy is `Popover2 > Tooltip2 > target` This order is
-required because the tooltip needs information from popover disable itself when the
-popover is open is open, thus preventing both elements from appearing at the same time.
+required because the tooltip needs information from popover to disable itself when the
+popover is open, thus preventing both elements from appearing at the same time.
 
 Also, you must take to either set `<Popover2 shouldReturnFocusOnClose={false}>`
 or `<Tooltip2 openOnTargetFocus={false}>` in this scenario in order to avoid undesirable
